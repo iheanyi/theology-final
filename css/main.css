@@ -5,9 +5,10 @@
 body, 
 .pure-g[class *= "pure-u"],
 .pure-g-r[class *= "pure-u"] {
-	font-family: "Open Sans", Arial,sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 400;
 }
+
 
 html, body {
 	height: 100%;
@@ -19,6 +20,9 @@ html, body {
 section {
 	min-height: 100%;
 	width: 100%;
+}
+
+.sect {
 }
 
 #arrows {
@@ -55,7 +59,7 @@ section {
 
 #main {
 	height: 100%;
-	width: 100%;
+	width: 95%;
 }
 .pure-g-r {
 	padding: 16px 16px 16px 16px;
