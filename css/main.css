@@ -18,6 +18,8 @@ html, body {
 }
 
 section {
+	float: left;
+	position: relative;
 	min-height: 100%;
 	width: 100%;
 }
@@ -26,6 +28,10 @@ section {
 }
 
 #arrows {
+	position: relative;
+}
+
+.leoimage {
 	position: relative;
 }
 
@@ -40,6 +46,7 @@ section {
 	vertical-align: middle;
 	line-height: 50px;
 	border-radius: 25px;
+	z-index: 998;
 }
 
 .prev {
