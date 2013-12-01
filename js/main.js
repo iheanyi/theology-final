@@ -2,12 +2,34 @@ $(document).ready(function() {
 
 		var tooltips = ['Title', 'My Position', 'The Vitruvian Man', 'Wearable Technology'];
 
+		var sections = $(".slide-content");
+		$('.image').addClass('animated fadeInRight');
+		$('.image').hide();
+
+		console.log(sections);
+		$("")
 	    $.fn.fullpage({
 	    	navigation: true,
 	    	navigationPosition: "right",
 	    	navigationTooltips: tooltips,
 	    	scrollOverflow: true,
-	    	slidesColor : ['#363636', '#8eaab7','#44596e','#8eaab7','#44596e','#8eaab7','#44596e','#8eaab7','#44596e','#8eaab7','#44596e','#8eaab7']
+	    	slidesColor : ['#4f6a76', '#8eaab7','#44596e','#8eaab7','#44596e','#8eaab7','#44596e','#8eaab7','#44596e','#8eaab7','#44596e','#8eaab7'],
+	    	afterLoad: function(anchorLink, index) {
+	    		//alert(index);
+	    		console.log("Logging");
+	    		console.log(sections[index-2]);
+	    		console.log(index);
+	    		$(sections[index-2]).removeClass('animated fadeInUp');
+	    		$(sections[index-2]).addClass('animated fadeInUp');
+	    		$('.image').show();
+	    		$(sections[index-2]).show();
+	    		$(sections[index-1]).hide();
+
+	    	},
+	    	onLeave: function(index, direction) {
+	    		$(sections[index-1]).hide();
+	    		$('.image').hide();
+	    	}
 	    });
 	/*$("#main").onepage_scroll({
 	   sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
