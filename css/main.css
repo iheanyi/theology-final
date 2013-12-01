@@ -1,0 +1,74 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:400,600,700,300);
+
+
+
+body, 
+.pure-g[class *= "pure-u"],
+.pure-g-r[class *= "pure-u"] {
+	font-family: "Open Sans", Arial,sans-serif;
+	font-weight: 400;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+section {
+	min-height: 100%;
+	width: 100%;
+}
+
+#arrows {
+	position: relative;
+}
+
+.square {
+	width: 50px;
+	height: 50px;
+	background: #e5e5e5;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	margin-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+	border-radius: 25px;
+}
+
+.prev {
+	position: fixed;
+	top: 38%;
+}
+
+.next {
+	position: fixed;
+	top: 45%;
+
+}
+
+.slide {
+	width: 100%;
+}
+
+#main {
+	height: 100%;
+	width: 100%;
+}
+.pure-g-r {
+	padding: 16px 16px 16px 16px;
+}
+
+.title {
+	font-family: "Lato";
+	font-weight: 700;
+	font-size: 3.50em;
+}
+
+div.title {
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100%;
+}
